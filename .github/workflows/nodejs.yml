@@ -29,8 +29,8 @@ jobs:
     - name: Login to docker hub
       uses: actions-hub/docker/login@master
       env:
-        DOCKER_USERNAME: ${secrets.DOCKER_USER}
-        DOCKER_PASSWORD: ${secrets.DOCKER_PASSWORD}
+        DOCKER_USERNAME: ${{secrets.DOCKER_USER}}
+        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
     - name: Build :latest
       run: docker build -t ${GITHUB_REPOSITORY}:latest .
     - name: Push to docker hub :latest
