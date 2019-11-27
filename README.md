@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/tombueng/interview-task/workflows/Node%20CI/badge.svg)](https://github.com/tombueng/interview-task/actions)
+
 # Project task
 
 Your task is to implement simple TODO application. User should be able to perform the following actions: 
